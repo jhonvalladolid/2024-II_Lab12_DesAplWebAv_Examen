@@ -1,0 +1,21 @@
+<header id="header" class="fixed-top d-flex align-items-center">
+  <div class="container d-flex align-items-center">
+    <h1 class="logo me-auto">
+      <a href="index.html">
+        <img src="assets/img/LOGO_IKOMI.png" alt="">
+      </a>
+    </h1>
+
+    <nav id="navbar" class="navbar order-last order-lg-0" [class.navbar-mobile]="isMobileMenuOpen">
+      <ul>
+        <li><a class="nav-link scrollto active" routerLink="/#hero"><i class="bx bx-home-alt-2 bx-sm"></i> Inicio</a></li>
+        <li><a class="nav-link scrollto" routerLink="/#about"><i class="bx bxs-business bx-sm"></i>Nosotros</a></li>
+        <li><a class="nav-link scrollto" routerLink="/#services"><i class="bx bxs-briefcase-alt-2 bx-sm"></i>Servicios</a></li>
+        <li><a class="nav-link scrollto" routerLink="/#portfolio"><i class="bx bxs-wrench bx-sm"></i>Producto</a></li>
+        <li><a class="nav-link scrollto" routerLink="/#marca"><i class="bx bxs-shield-alt-2 bx-sm"></i>Marcas</a></li>
+        <li><a class="nav-link scrollto" routerLink="/#contact"><i class="bx bxs-contact bx-sm"></i> Contáctenos</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle" (click)="toggleMenu()"></i>
+    </nav>
+  </div>
+</header>
