@@ -1,0 +1,50 @@
+#about {
+  background-color: #111111; /* Fondo oscuro */
+  color: #ffffff; /* Texto blanco */
+  padding: 60px 0;
+}
+
+#about h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#about .content p {
+  color: #dddddd;
+  line-height: 1.6;
+}
+
+#about .icon-boxes .icon-box {
+  background: none; /* Elimina el fondo */
+  padding: 20px;
+  border: none; /* Elimina los bordes */
+  color: #ffffff;
+  text-align: left;
+}
+
+#about .icon-boxes .icon-box i {
+  font-size: 40px;
+  color: #e03a3c; /* Color rojo para los íconos */
+  margin-bottom: 10px;
+}
+
+#about .icon-boxes .icon-box h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 0;
+}
+
+#about .icon-boxes .icon-box p {
+  color: #dddddd;
+  line-height: 1.6;
+  margin-bottom: 0;
+}

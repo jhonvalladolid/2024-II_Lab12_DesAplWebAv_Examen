@@ -1,0 +1,64 @@
+/* Estilo general de la sección */
+.section-title {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.thumbnail {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Estilos para las tarjetas (cards) */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-header {
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.card-body img {
+  width: 100%;
+  height: auto;
+}
+
+.card-text {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0;
+  font-size: 0.9em;
+  color: #333;
+}
+
+/* Flexbox para alinear tarjetas en filas centradas */
+.album .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Ajuste del tamaño de las tarjetas para pantallas más grandes */
+.col {
+  flex: 1 1 280px;
+  max-width: 280px;
+}

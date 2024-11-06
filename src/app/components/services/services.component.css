@@ -1,0 +1,52 @@
+/* Fondo para la sección */
+.diagonal-background {
+  position: relative;
+  background-color: #111111;
+  padding: 60px 0;
+  color: #ffffff;
+}
+
+/* Estilos de los títulos y párrafos */
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+.section-title p {
+  font-size: 16px;
+  color: #aaaaaa;
+  text-align: center;
+}
+
+/* Caja de cada servicio */
+.icon-box {
+  padding: 20px;
+  background-color: #222222;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.icon-box:hover {
+  transform: translateY(-10px);
+}
+
+.icon-box i {
+  font-size: 36px;
+  color: #e03a3c;
+  margin-bottom: 15px;
+}
+
+.icon-box h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.icon-box p {
+  font-size: 14px;
+  color: #aaaaaa;
+}

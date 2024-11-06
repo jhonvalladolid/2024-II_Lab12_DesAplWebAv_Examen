@@ -1,0 +1,10 @@
+<div class="client-sect">
+  <div class="client-slider" [ngStyle]="{'transform': 'translateX(' + (-100 / 3 * currentSlide) + '%)'}">
+    <div class="client-slide" *ngFor="let client of clients; let i = index" [class.active]="currentSlide === i">
+      <img [src]="client" alt="Client Image" class="img-fluid">
+    </div>
+  </div>
+  <div class="pagination">
+    <span *ngFor="let _ of clients; let i = index" (click)="goToSlide(i)" [class.active]="currentSlide === i"></span>
+  </div>
+</div>

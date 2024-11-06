@@ -1,0 +1,33 @@
+.counts {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.count-box {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.count-box:hover {
+  transform: scale(1.05);
+}
+
+.count-box i {
+  font-size: 40px;
+  color: #e03a3c;
+  margin-bottom: 10px;
+}
+
+.count-box h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.count-box p {
+  font-size: 16px;
+  color: #666666;
+}

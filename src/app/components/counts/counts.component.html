@@ -1,0 +1,13 @@
+<section id="counts" class="counts">
+  <div class="container" @fadeIn>
+    <div class="row">
+      <div *ngFor="let count of counts" class="col-lg-3 col-md-6 mt-5 mt-md-0">
+        <div class="count-box text-center">
+          <i [class]="count.icon"></i>
+          <h2>{{ count.currentCount }}</h2>
+          <p>{{ count.label }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
