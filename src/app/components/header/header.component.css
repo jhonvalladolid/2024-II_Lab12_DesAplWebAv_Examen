@@ -1,55 +1,77 @@
+/* Estilos para el header */
 #header {
-  background-color: rgba(17, 58, 194, 0.7);
-  transition: all 0.5s;
-  z-index: 997;
-  padding: 20px 0;
+  background-color: #1E3A8A; /* Color de fondo azul */
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#header.header-scrolled {
-  padding: 12px 0;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-#header .logo img {
-  max-height: 60px;
+.logo img {
+  height: 40px;
 }
 
 .navbar ul {
+  display: flex;
   list-style: none;
   padding: 0;
-  display: flex;
-  align-items: center;
+  margin: 0;
+}
+
+.navbar li {
+  margin-right: 20px;
 }
 
 .navbar a {
-  padding: 10px 0 10px 30px;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  color: #fdfcfc;
-  transition: 0.3s;
+  color: #ffffff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-.navbar a:hover,
-.navbar .active {
-  color: #eece18;
+.navbar a:hover {
+  color: #FFD700; /* Color amarillo para hover */
+}
+
+.navbar i {
+  margin-right: 8px;
 }
 
 .mobile-nav-toggle {
-  font-size: 30px;
-  cursor: pointer;
   display: none;
 }
 
+/* Ajustes para dispositivos móviles */
 @media (max-width: 991px) {
-  .mobile-nav-toggle {
-    display: block;
-  }
-  .navbar ul {
+  .navbar {
     display: none;
   }
-  .navbar-mobile {
-    display: block;
-    background: rgba(0, 0, 0, 0.9);
+
+  .mobile-nav-toggle {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .navbar.active {
+    display: flex;
+    flex-direction: column;
+    background-color: #1E3A8A;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    width: 200px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }

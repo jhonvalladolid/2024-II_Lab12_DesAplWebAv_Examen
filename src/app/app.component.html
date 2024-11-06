@@ -1,12 +1,47 @@
 <app-header></app-header>
-<router-outlet></router-outlet>
-<app-hero-carousel></app-hero-carousel>
-<app-client-sect></app-client-sect>
-<app-about></app-about>
-<app-historia></app-historia>
-<app-counts></app-counts>
-<app-services></app-services>
-<app-products></app-products>
-<app-brands></app-brands>
-<app-contact></app-contact>
+
+<main>
+  <app-hero-carousel id="hero"></app-hero-carousel>
+
+  <!-- Sección de Clientes -->
+  <section id="clients">
+    <app-client-sect></app-client-sect>
+  </section>
+
+  <!-- Sección de Nosotros -->
+  <section id="about">
+    <app-about></app-about>
+  </section>
+
+  <!-- Sección de Historia -->
+  <section id="historia">
+    <app-historia></app-historia>
+  </section>
+
+  <!-- Sección de Estadísticas -->
+  <section id="counts">
+    <app-counts></app-counts>
+  </section>
+
+  <!-- Sección de Servicios -->
+  <section id="services">
+    <app-services></app-services>
+  </section>
+
+  <!-- Sección de Productos -->
+  <section id="products">
+    <app-products></app-products>
+  </section>
+
+  <!-- Sección de Marcas -->
+  <section id="brands">
+    <app-brands></app-brands>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section id="contact">
+    <app-contact></app-contact>
+  </section>
+</main>
+
 <app-footer></app-footer>
