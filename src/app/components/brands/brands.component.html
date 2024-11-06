@@ -1,0 +1,21 @@
+<section id="marca" class="team section-bg">
+  <div class="container">
+    <!-- Título de la sección -->
+    <div class="section-title">
+      <h2>MARCAS</h2>
+      <p>Contamos con las marcas más reconocidas en el mercado nacional e internacional especializadas en la fabricación de repuestos para vehículos con altos estándares de calidad.</p>
+    </div>
+
+    <!-- Tarjetas de marcas -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div *ngFor="let brand of brands" class="col">
+        <div class="card h-100" [attr.data-aos]="brand.animation">
+          <img [src]="brand.image" class="card-img-top" alt="Marca">
+          <div class="card-body">
+            <p class="card-text">{{ brand.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

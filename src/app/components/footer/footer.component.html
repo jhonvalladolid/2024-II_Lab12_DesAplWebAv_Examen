@@ -1,1 +1,56 @@
-<p>footer works!</p>
+<footer id="footer" class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <!-- Columna 1: Información de la empresa -->
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>IKOMI PERU</h3>
+          <p>Empresa importadora y comercializadora de repuestos para todo tipo de vehículos con calidad y a precios de mercado.</p>
+          <div class="social-links">
+            <a *ngFor="let link of socialLinks" [href]="link.url" target="_blank">
+              <i [class]="link.icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna 2: Información de contacto -->
+        <div class="col-lg-7">
+          <div class="row">
+            <div class="col-md-12 info-box" data-aos="fade-right">
+              <i class="bx bx-map"></i>
+              <h3>Dirección</h3>
+              <p>{{ address }}</p>
+            </div>
+            <div class="col-md-6 info-box" data-aos="zoom-in">
+              <i class="bx bx-envelope"></i>
+              <h3>Correo</h3>
+              <p *ngFor="let email of emails">{{ email }}</p>
+            </div>
+            <div class="col-md-6 info-box" data-aos="zoom-in">
+              <i class="bx bx-phone-call"></i>
+              <h3>Teléfonos</h3>
+              <p *ngFor="let phone of phones">{{ phone }}</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna 3: Enlaces -->
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Links</h4>
+          <ul>
+            <li *ngFor="let link of navLinks">
+              <i [class]="link.icon"></i> <a [href]="link.url">{{ link.name }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Derechos de autor -->
+  <div class="container d-md-flex py-4">
+    <div class="me-md-auto text-center text-md-start">
+      <p>&copy; 2024 <a href="#">Grupo IKOMI PERU</a></p>
+    </div>
+  </div>
+</footer>

@@ -10,15 +10,20 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { CountsComponent } from "./components/counts/counts.component";
 import { ServicesComponent } from "./components/services/services.component";
+import { ProductsComponent } from "./components/products/products.component";
+import { BrandsComponent } from "./components/brands/brands.component";
+import { ContactComponent } from "./components/contact/contact.component";
+import { FooterComponent } from "./components/footer/footer.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, HeroCarouselComponent, ClientSectComponent, AboutComponent, HistoriaComponent, CountsComponent, ServicesComponent],
+  imports: [RouterOutlet, HeaderComponent, HeroCarouselComponent, ClientSectComponent, AboutComponent, HistoriaComponent, CountsComponent, ServicesComponent, ProductsComponent, BrandsComponent, ContactComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
+  title = 'ProyIntDesAplWebAv';
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   ngOnInit(): void {
